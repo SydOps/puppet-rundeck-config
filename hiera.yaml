@@ -1,0 +1,10 @@
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - 'system/%{::node_environment}/%{module_name}'
+  - 'system/common/%{module_name}'
+
+:yaml:
+  :datadir: /vagrant/hieradata

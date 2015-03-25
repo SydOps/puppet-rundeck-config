@@ -1,0 +1,12 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    puppet-rundeck (1.1.0)
+      puppetlabs-inifile (< 2.0.0, >= 1.0.3)
+      puppetlabs-stdlib (< 5.0.0, >= 3.0.0)
+    puppetlabs-inifile (1.2.0)
+    puppetlabs-stdlib (4.5.1)
+
+DEPENDENCIES
+  puppet-rundeck (>= 0)
+

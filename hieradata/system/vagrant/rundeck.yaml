@@ -1,0 +1,37 @@
+rundeck::package_version: '2.4.2-1.3.GA'
+rundeck::package_ensure: present 
+rundeck::package_source: 
+rundeck::jre_name: jdk 
+rundeck::jre_version: 1.7.0_25-fcs 
+rundeck::jre_ensure:
+rundeck::jre_manage:  
+rundeck::auth_types:  
+rundeck::auth_template:  
+rundeck::auth_config:  
+rundeck::acl_policies:  
+rundeck::acl_template:  
+rundeck::service_logs_dir: 
+rundeck::ssl_enabled:  
+rundeck::framework_config:  
+rundeck::projects_default_org:  
+rundeck::projects_default_desc:  
+rundeck::loglevel:  
+rundeck::rss_enabled:  
+rundeck::clustermode_enabled:  
+rundeck::grails_server_url:  
+rundeck::database_config:  
+rundeck::keystore:  
+rundeck::keystore_password:  
+rundeck::key_password:  
+rundeck::truststore:  
+rundeck::truststore_password:  
+rundeck::service_name:  
+rundeck::service_manage: true 
+rundeck::service_script: 'rundeck_config/rundeckd.erb' 
+rundeck::service_config: 'rundeck_config/rundeckd.conf.erb'  
+rundeck::mail_config:  
+rundeck::security_config:  
+rundeck::manage_yum_repo:  
+rundeck::user:  
+rundeck::group:  
+rundeck::rdeck_home:  
