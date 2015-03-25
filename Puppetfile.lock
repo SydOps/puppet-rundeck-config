@@ -7,6 +7,12 @@ FORGE
     puppetlabs-inifile (1.2.0)
     puppetlabs-stdlib (4.5.1)
 
+PATH
+  remote: private/rundeck_config
+  specs:
+    rundeck_config (0.0.1)
+
 DEPENDENCIES
   puppet-rundeck (>= 0)
+  rundeck_config (>= 0)
 

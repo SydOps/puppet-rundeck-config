@@ -2,8 +2,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "centos-63-x64"
-  config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-63-x64.box"
+  config.vm.box = "fillup/centos-6.5-x86_64-minimal"
   config.vm.hostname = 'rundeck'
 
   config.vm.network :private_network, :ip => '192.168.1.2', :auto_network => true
@@ -15,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puppet.hiera_config_path = "hiera.yaml"
     puppet.working_directory = "/vagrant"
     puppet.manifest_file = "site.pp"
-    puppet.module_path = ["modules","site/modules"]
+    puppet.module_path = ["modules"]
     puppet.options = "--environment vagrant --debug --verbose"
   end
 end
